@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextValoareDepozit"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="200dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/tVValoareDepozit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Valoare Depozit"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextValoareDepozit"
+        app:layout_constraintEnd_toStartOf="@+id/editTextValoareDepozit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerDepozit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextValoareDepozit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/editTextValoareDepozit"
+        app:layout_constraintTop_toTopOf="@+id/editTextValoareDepozit" />
+
+    <TextView
+        android:id="@+id/tVDobandaDepozit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rata Dobanzii"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextDobandaDepozit"
+        app:layout_constraintEnd_toEndOf="@+id/tVValoareDepozit"
+        app:layout_constraintStart_toStartOf="@+id/tVValoareDepozit" />
+
+    <EditText
+        android:id="@+id/editTextDobandaDepozit"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLuni"
+        app:layout_constraintEnd_toEndOf="@+id/editTextValoareDepozit"
+        app:layout_constraintStart_toStartOf="@+id/editTextValoareDepozit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValoareDepozit" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextDobandaDepozit"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerDepozit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerDepozit" />
+
+    <TextView
+        android:id="@+id/tVLuni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perioada(luni)"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextLuni"
+        app:layout_constraintEnd_toEndOf="@+id/tVDobandaDepozit"
+        app:layout_constraintStart_toStartOf="@+id/tVDobandaDepozit" />
+
+    <EditText
+        android:id="@+id/editTextLuni"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tVSumaIncasata"
+        app:layout_constraintEnd_toEndOf="@+id/editTextValoareDepozit"
+        app:layout_constraintStart_toStartOf="@+id/editTextValoareDepozit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValoareDepozit" />
+
+    <TextView
+        android:id="@+id/tVSumaIncasata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="20dp"
+        android:text="Suma Incasata"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculeazaDepozit"
+        app:layout_constraintEnd_toEndOf="@+id/editTextValoareDepozit"
+        app:layout_constraintStart_toStartOf="@+id/editTextValoareDepozit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValoareDepozit" />
+
+    <Button
+        android:id="@+id/btnCalculeazaDepozit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="30dp"
+        android:text="Calculeaza Suma Incasata"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreareDepozit"
+        app:layout_constraintEnd_toEndOf="@+id/editTextValoareDepozit"
+        app:layout_constraintStart_toStartOf="@+id/editTextValoareDepozit"
+        app:layout_constraintTop_toTopOf="@+id/editTextValoareDepozit" />
+
+    <Button
+        android:id="@+id/btnCreareDepozit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="20dp"
+        android:text="Creeaza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextValoareDepozit"
+        app:layout_constraintStart_toStartOf="@+id/editTextValoareDepozit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValoareDepozit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCredit"
+        android:layout_width="124dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:text="cerere credit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnDepozit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="creare depozit"
+        app:layout_constraintEnd_toEndOf="@+id/btnCredit"
+        app:layout_constraintStart_toStartOf="@+id/btnCredit"
+        app:layout_constraintTop_toBottomOf="@+id/btnCredit" />
+
+    <Button
+        android:id="@+id/btnListaCredite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="lista credite"
+        app:layout_constraintEnd_toEndOf="@+id/btnDepozit"
+        app:layout_constraintStart_toStartOf="@+id/btnDepozit"
+        app:layout_constraintTop_toBottomOf="@+id/btnDepozit" />
+
+    <Button
+        android:id="@+id/btnListaDepozite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="270dp"
+        android:text="lista depozite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnListaCredite"
+        app:layout_constraintStart_toStartOf="@+id/btnListaCredite"
+        app:layout_constraintTop_toBottomOf="@+id/btnListaCredite" />
+
+    <Button
+        android:id="@+id/btnAfisareBD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:text="Afisare Depozite din BD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnListaDepozite"
+        app:layout_constraintStart_toStartOf="@+id/btnListaDepozite"
+        app:layout_constraintTop_toBottomOf="@+id/btnCredit" />
+
+    <Button
+        android:id="@+id/btnAfisareUseri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="30dp"
+        android:text="Afisare Useri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAfisareBD"
+        app:layout_constraintStart_toStartOf="@+id/btnAfisareBD"
+        app:layout_constraintTop_toBottomOf="@+id/btnCredit" />
+
+    <Button
+        android:id="@+id/btnAdaugaCrediteFirebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="40dp"
+        android:text="Adauga credite Firebase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAfisareUseri"
+        app:layout_constraintStart_toStartOf="@+id/btnAfisareUseri"
+        app:layout_constraintTop_toBottomOf="@+id/btnCredit"
+        app:layout_constraintVertical_bias="0.965" />
+
+    <Button
+        android:id="@+id/btnSarbatori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sarbatori Legale"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnListaDepozite"
+        app:layout_constraintStart_toStartOf="@+id/btnListaDepozite"
+        app:layout_constraintTop_toBottomOf="@+id/btnListaDepozite"
+        app:layout_constraintVertical_bias="0.672" />
+</androidx.constraintlayout.widget.ConstraintLayout>

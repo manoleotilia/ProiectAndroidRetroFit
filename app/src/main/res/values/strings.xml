@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ProiectAndroidRetroFit</string>
+    <string name="onCancelled">onCancelled</string>
+    <string name="failedtoread">FailedtoreadCvobject</string>
+    <string name="getReferenceStringFirebase">myfirebaseandroidproiect</string>
+    <string name="credit_putExtra">credit</string>
+    <string name="creditulSetText">Creditul</string>
+    <string name="depozitsettext">Depozitul</string>
+    <string name="onactvresult">onActivityResult: s-a intors in main</string>
+    <string name="RON">RON</string>
+    <string-array name="monede">
+        <item>EUR</item>
+        <item>RON</item>
+    </string-array>
+</resources>
